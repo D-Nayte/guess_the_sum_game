@@ -1,0 +1,85 @@
+:root {
+  font-size: 18px;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(to left, #e66465, #9198e5);
+  height: 98vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  padding: 0 2rem 2rem;
+  border-left: 2px solid gray;
+  border-top: 2px solid gray;
+  border-right: 2px solid rgb(80, 80, 80);
+  border-bottom: 2px solid rgb(80, 80, 80);
+  border-radius: 1rem;
+  box-shadow: 0 10px 6px 3px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(-30deg, #e66465, #9198e5);
+}
+
+h1::first-letter {
+  text-transform: uppercase;
+}
+
+h1 {
+  color: #e66465;
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+  word-spacing: 0.5rem;
+  background-clip: text;
+  text-shadow: 0px 5px 5px black;
+}
+
+h2 {
+  color: #9198e5;
+  text-shadow: 0px 3px 2px black;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+input {
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+
+button {
+  background-color: transparent;
+  border-radius: 50%;
+  border-style: double;
+  border-color: currentColor;
+  color: red;
+  font-weight: 700;
+  font-size: 1rem;
+  box-shadow: 0px 3px 0px 2px black;
+  cursor: pointer;
+  transition: all 250ms;
+  transform: translateY(-0.2rem);
+}
+
+button:hover {
+  color: goldenrod;
+  scale: 1.05;
+  box-shadow: 0px 6px 0px 0px black;
+  transform: translateY(-0.4rem);
+}
+
+@media (max-width: 600px) {
+  :root {
+    font-size: 10px;
+  }
+
+  body {
+    align-items: flex-start;
+    padding-top: 2rem;
+  }
+}
